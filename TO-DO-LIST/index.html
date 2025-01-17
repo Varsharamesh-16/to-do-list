@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>To-Do List</h1>
+    <div class="container">
+        <div class="section" id="top-priorities">
+            <h2>Top Priorities</h2>
+            <div class="items"></div>
+            <div class="add-item">
+                <input type="text" placeholder="Add priority...">
+                <button onclick="addItem('top-priorities')">Add</button>
+            </div>
+        </div>
+        <div class="section" id="tasks">
+            <h2>Tasks</h2>
+            <div class="items"></div>
+            <div class="add-item">
+                <input type="text" placeholder="Add task...">
+                <button onclick="addItem('tasks')">Add</button>
+            </div>
+        </div>
+        <div class="section" id="events">
+            <h2>Events</h2>
+            <div class="items"></div>
+            <div class="add-item">
+                <input type="text" placeholder="Add event...">
+                <button onclick="addItem('events')">Add</button>
+            </div>
+        </div>
+        <div class="section" id="notes">
+            <h2>Notes</h2>
+            <div class="items"></div>
+            <div class="add-item">
+                <input type="text" placeholder="Add note...">
+                <button onclick="addItem('notes')">Add</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="calendar-selector">
+            <label for="calendar">Select Date:</label>
+            <input type="date" id="calendar" onchange="selectDate()">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
